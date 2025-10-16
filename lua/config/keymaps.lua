@@ -17,7 +17,7 @@ vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>p', '"+p<CR>')
 
 -- Neotree
-vim.keymap.set('n', '<leader>e', ':Neotree toggle left<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree toggle float<CR>')
 
 -- Telescope Keymaps
 local builtin = require('telescope.builtin')
