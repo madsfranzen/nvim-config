@@ -4,6 +4,9 @@
 vim.o.undofile = true
 vim.o.swapfile = false
 
+-- remove splash screen
+vim.cmd("set shortmess+=I")
+
 -- Enable all filetype plugins and syntax (if not enabled, for better startup)
 vim.cmd('filetype plugin indent on')
 if vim.fn.exists('syntax_on') ~= 1 then vim.cmd('syntax enable') end
