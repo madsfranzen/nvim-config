@@ -12,7 +12,7 @@ require('plugins.tiny-code-actions')
 -- For C# Lsp to work we need to require it separately it seems.
 -- Might refactor later - or not.
 package.path = package.path .. ";" .. vim.fn.stdpath("config") .. "/lsp/?.lua"
-require("lsp.csharp")
+require("csharp")
 
 require('config.lsp')
 require('config.autocmd')
