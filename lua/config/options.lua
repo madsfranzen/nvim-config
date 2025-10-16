@@ -2,7 +2,6 @@
 --------------------------------------------------------------------------------
 -- General ====================================================================
 vim.o.undofile = true
-vim.o.tabstop = 4
 vim.o.swapfile = false
 
 -- Enable all filetype plugins and syntax (if not enabled, for better startup)
@@ -27,6 +26,7 @@ vim.opt.fillchars    = { eob = " " }
 vim.o.scrolloff      = 10
 vim.o.cmdheight      = 0
 vim.opt.list = false
+vim.opt.termguicolors = true
 
 -- Editing ====================================================================
 vim.o.autoindent     = true                  -- Use auto indent
@@ -39,7 +39,7 @@ vim.o.shiftwidth     = 2                     -- Use this number of spaces for in
 vim.o.smartcase      = true                  -- Respect case if search pattern has upper case
 vim.o.smartindent    = true                  -- Make indenting smart
 vim.o.spelloptions   = 'camel'               -- Treat camelCase word parts as separate words
-vim.o.tabstop        = 2                     -- Show tab as this number of spaces
+vim.o.tabstop        = 4                     -- Show tab as this number of spaces
 vim.o.virtualedit    = 'block'               -- Allow going past end of line in blockwise mode
 
 vim.o.iskeyword      = '@,48-57,_,192-255,-' -- Treat dash as `word` textobject part
