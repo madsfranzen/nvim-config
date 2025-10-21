@@ -73,8 +73,8 @@ require("lualine").setup({
         no_harpoon = "Harpoon not loaded",
       },
     },
-    lualine_x = { { "" } },
+    lualine_x = { {  } },
     lualine_y = { "filename" },
-    lualine_z = {},
+    lualine_z = { },
   },
 })

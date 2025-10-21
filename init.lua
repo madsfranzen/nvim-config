@@ -7,6 +7,7 @@ require('plugins.neotree')
 require('plugins.blink')
 require('plugins.harpoon')
 require('plugins.lualine')
+require('plugins.conifer')
 require('plugins.tiny-code-actions')
 
 -- For C# Lsp to work we need to require it separately it seems.

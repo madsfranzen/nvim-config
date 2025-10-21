@@ -15,7 +15,7 @@ if vim.fn.exists('syntax_on') ~= 1 then vim.cmd('syntax enable') end
 vim.o.breakindent    = true      -- Indent wrapped lines to match line start
 vim.o.breakindentopt = 'list:-1' -- Add padding for lists (if 'wrap' is set)
 vim.o.colorcolumn    = '+1'      -- Draw column on the right of maximum width
-vim.o.cursorline     = false     -- Enable current line highlighting
+vim.o.cursorline     = false    -- Enable current line highlighting
 vim.o.linebreak      = true      -- Wrap lines at 'breakat' (if 'wrap' is set)
 vim.o.list           = true      -- Show helpful text indicators
 vim.o.number         = true      -- Show line numbers
@@ -24,7 +24,7 @@ vim.o.ruler          = true      -- Don't show cursor coordinates
 vim.o.showmode       = true      -- Don't show mode in command line
 vim.o.signcolumn     = 'yes'     -- Always show signcolumn (less flicker)
 vim.o.winborder      = 'rounded' -- Use border in floating windows
-vim.o.wrap           = true      -- Don't visually wrap lines (toggle with \w)
+vim.o.wrap           = true      -- Visually wrap lines (toggle with \w)
 vim.opt.fillchars    = { eob = " " }
 vim.o.scrolloff      = 10
 vim.o.cmdheight      = 0
