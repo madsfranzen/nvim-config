@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename)
 vim.keymap.set('n', '<leader>cd', vim.diagnostic.open_float, { desc = 'Show diagnostics in float' })
 -- vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action)
 vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, { noremap = true, silent = true, desc = "LSP hover" })
-vim.keymap.set("n", "J", "10j", { noremap = true })
+vim.keymap.set("n", "J", "10j", { noremap = true, silent = true })
 vim.keymap.set("n", "K", "10k", { noremap = true, silent = true })
 
 -- Copy/Paste via system clipboard
