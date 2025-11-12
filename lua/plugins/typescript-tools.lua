@@ -3,7 +3,14 @@ vim.pack.add({
     { src = "https://github.com/pmizio/typescript-tools.nvim" }
 })
 require("typescript-tools").setup {
-    on_attach = function() end,
+    on_attach = function(_, bufnr)
+        local ft = vim.bo.filetype
+        if ft == "typescript" or ft == "typescriptreact" or ft == "javascript" or ft == "javascriptreact" then
+            -- Optional: remap <leader>cf to Prettier for TS/JS files
+            vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>cf", "<cmd>lua require('utils.prettier').format_file()<CR>",
+                { noremap = true, silent = true })
+        end
+    end,
     handlers = { ... },
     settings = {
         -- spawn additional tsserver instance to calculate diagnostics on it

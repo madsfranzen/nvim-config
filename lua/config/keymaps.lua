@@ -13,6 +13,8 @@ vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, { noremap = true, silent = t
 vim.keymap.set("n", "J", "10j", { noremap = true, silent = true })
 vim.keymap.set("n", "K", "10k", { noremap = true, silent = true })
 
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = "Go to Definition" })
+
 -- Copy/Paste via system clipboard
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>p', '"+p<CR>')

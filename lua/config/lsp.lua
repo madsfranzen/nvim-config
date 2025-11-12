@@ -5,10 +5,10 @@ vim.lsp.enable({
   "csharp",
 })
 
--- Diagnostics
+-- Diagnostics - disabled, using inline-diagnostics plugin instead
 vim.diagnostic.config({
   signs = { priority = 9999 },
-  virtual_lines = true,
+  virtual_lines = false,
   virtual_text = false,
   update_in_insert = false,
 })

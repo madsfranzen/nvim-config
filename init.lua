@@ -1,7 +1,7 @@
 require('config.globals')
 
 require('plugins.vague')
-require('plugins.tiny-code-actions')
+require('plugins.tabout')
 require('plugins.treesitter')
 require('plugins.telescope')
 require('plugins.neotree')
@@ -12,6 +12,8 @@ require('plugins.typescript-tools')
 require('plugins.nvim-ts-autotag')
 require('plugins.autopairs')
 require('plugins.tabout')
+require('plugins.tiny-code-actions')
+require('plugins.inline-diagnostics')
 
 -- For C# Lsp to work we need to require it separately it seems.
 -- Might refactor later - or not.
